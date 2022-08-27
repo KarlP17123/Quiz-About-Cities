@@ -37,3 +37,55 @@ body
     background: #001d53;
     color: #0096db;
 }
+#Information
+{
+    height: auto;
+    width: 580px;
+    padding: 20px;
+    background: #0096db;
+    border-radius: 50px  50px;
+    border: 2px solid #8b00db;
+/*    display: none;*/
+}
+#Information h2
+{
+  font-size: 40px;
+  color: #a700da;
+}
+#Information h4
+{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+#Information #button
+{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#Information  #button button
+{
+    height: 50px;
+    width: 120px;
+    margin: 10px 20px;
+    border: none;
+    outline: none;
+    color: #0096db;
+    background: #010c6e;
+    border: 1px solid #001d53;
+    border-radius:  18px 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#Information #button button:last-child
+{
+    margin: 10px 0;
+}
+#Information #button button:hover
+{
+    background: #000f53;
+}
