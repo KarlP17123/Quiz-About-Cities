@@ -93,7 +93,7 @@ body
 }
 #quiz
 {
-    display: block;
+    /* display: block;*/
     height: 480px;
     position: relative;
 }
@@ -168,7 +168,7 @@ body
 #quiz #optionList 
 {
     height: 400px;
-    width; 100%;
+    width: 100%;
     position: absolute;
     top: 160px;
 }
@@ -198,4 +198,108 @@ body
 #quiz #optionList .disabled
 {
    pointer-events: none;
+}
+
+/*Answers Section*/
+
+#quiz #answersSection
+{
+    height: 60px;
+    width: 100%;
+    background: #fafafc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px 0;
+}
+#quiz #answersSection h3
+{
+    margin: 0px 30px;
+    display: none;
+}
+#quiz #answersSection h3:last-child
+{
+    height: 40px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    background: #000000;
+    position: absolute;
+    right: 0;
+    color: #0096db;
+    border: 1px solid #8b00db;
+    font-size: 18px;
+    border-radius: 20px 20px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+#quiz #answersSection h3:hover
+{
+    background: #302a2a;
+}
+#quiz #answersSection h3:first-child:hover
+{
+    background: none;
+}
+/*Result Section*/
+#container #result
+{
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    background: #c7c7c7;
+    border-radius: 30px 30px;
+    border: 1px solid #07c5ff;
+    overflow: hidden;
+    position: relative;
+    /*  display: none;*/
+}
+#container #result i
+{
+    font-size: 180px;
+    color: #07c5ff;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+#container #result h6
+{
+    height: 40px;
+    width: 87%;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    top: 235px;
+}
+#container #result #points
+{
+    font-size: 35px;
+    top: 274px;
+}
+#container #result button
+{
+    height: 65px;
+    width: 260px;
+    border: none;
+    outline: none;
+    background: #069bff;
+    color: #000;
+    position: absolute;
+    left: 125px;
+    top: 335px;
+    border: 1px solid #0066ff;
+    border-radius: 18px 18px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#container #result button:last-child {
+    top: 408px;
+}
+
+#container #result button:hover {
+    background: #012bb6;
 }
