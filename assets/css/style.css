@@ -17,6 +17,7 @@ body
     height: auto;
     width: auto;
 }
+/*Start Section*/
 #start
 {
     height: 70px;
@@ -37,7 +38,8 @@ body
     background: #001d53;
     color: #0096db;
 }
-#Information
+/*Information Section*/
+#Information,#quiz
 {
     height: auto;
     width: 580px;
@@ -45,7 +47,7 @@ body
     background: #0096db;
     border-radius: 50px  50px;
     border: 2px solid #8b00db;
-/*    display: none;*/
+    display: none;
 }
 #Information h2
 {
@@ -88,4 +90,61 @@ body
 #Information #button button:hover
 {
     background: #000f53;
+}
+#quiz
+{
+    display: block;
+    height: 480px;
+    position: relative;
+}
+#quiz #quiz_header 
+{
+    height: 60px;
+    width: 100%;
+    background: #0096db;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px;
+}
+#quiz #quiz_header h5
+{
+    font-size: 30px;
+    margin: 0 20px;
+    color: #ffffff
+}
+#quiz #quiz_header #timer
+{
+    height: 50px;
+    width: 200px;
+    background: #016db6;
+    color:#ffffff;
+    border: 1px solid #a700da;
+    font-size: 20px;
+    border-radius: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+}
+#quiz #quiz_header #timer h6
+{
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    color:#ffffff;
+    margin: 0 20px;
+}
+#quiz #quiz_header #timer #time
+{
+    height: 44px;
+    width: 44px;
+    background: #ffffff;
+    color:#054c6d;
+    border: 1px solid #001d53;
+    border-radius: 15px 15px;
+    margin: 2px 0 0 27px;
 }
